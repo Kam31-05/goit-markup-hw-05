@@ -514,13 +514,25 @@ height: 40px;
 border: 1px solid rgba(46, 47, 66, 0.4);
 border-radius: 4px;
 padding-left: 38px;
+outline: none;
 }
-.form-user-icon {
-    position: absolute;
-    top: 0;
-    left: 0;
+.form-user-input:focus{
+    border:1px solid #4d5ae5;
+}
+.form-user-input:focus+.form-user-icon{
+    stroke: #4d5ae5
 }
 
+.form-user-icon {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    
+}
+.form-user-icon:focus{
+    stroke: #4d5ae5;
+}
 .form-user-icon-wraper{
     position: relative;
 }
