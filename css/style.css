@@ -493,7 +493,7 @@ color: #2e2f42;
 }
 
 .modal-close:hover,
-.modal-close:active{
+.modal-close:focus{
    background-color: #404bbf;
    border: none;
    fill: #fff;
@@ -531,17 +531,21 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .form-user-icon {
     position: absolute;
+    fill: #2e2f42;
     top: 50%;
     left: 16px;
     transform: translateY(-50%);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
+        
 }
-.form-user-icon:focus{
-    stroke: #4d5ae5;
-    margin-bottom: 8px;
-}
+
+
+    
+
 .form-user-icon-wraper{
     position: relative;
+    margin-bottom: 8px;
 }
- 
+.form-user-icon:focus+ .form-user-icon{
+    fill: #4d5ae5;
+}
