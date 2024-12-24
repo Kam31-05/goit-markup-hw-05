@@ -490,13 +490,16 @@ color: #2e2f42;
 }
 
 .icon-close {
+    fill: #2e2f42;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-close:hover,
-.icon-close:focus {
-    fill: #ffffff;
+.modal-close:hover,
+.modal-close:focus {
+ stroke: #ffffff;
 }
+
+
 .form-wrapper-cont {
 }
 .form-user-label {
@@ -515,6 +518,7 @@ border: 1px solid rgba(46, 47, 66, 0.4);
 border-radius: 4px;
 padding-left: 38px;
 outline: none;
+border: stroke 250ms; cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-user-input:focus{
     border:1px solid #4d5ae5;
@@ -533,6 +537,7 @@ outline: none;
 }
 .form-user-icon:focus{
     stroke: #4d5ae5;
+    margin-bottom: 8px;
 }
 .form-user-icon-wraper{
     position: relative;
